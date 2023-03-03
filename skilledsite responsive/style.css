@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --lurjiferi: #13183F;
+    --nacrisferi: #83869A;
+    --gradienti: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    --vardisferi: #F74780;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-skilled {
+    width: 89px;
+    height: 25px;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--lurjiferi);
+    margin-left: 16px;
+}
+
+.button-get-started {
+    width: 148px;
+    height: 48px;
+    border-radius: 28px;
+    background: var(--lurjiferi);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-right: 14px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.wrap {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.responsive {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--lurjiferi);
+    margin-top: 50px;
+}
+
+.textg {
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+.buttong {
+    width: 138px;
+    height: 43px;
+    border-radius: 28px;
+    background: white;
+    border: none;
+    color: var(--lurjiferi);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.pirveli-text {
+    width: 343px;
+    color: var(--lurjiferi);
+    font-size: 40px;
+    line-height: 50.4px;
+    margin-left: 16px;
+}
+
+.meore-text {
+    width: 343px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--nacrisferi);
+    margin-top: 22px;
+    margin-left: 16px;
+}
+
+.button-get-started-meore {
+    width: 167px;
+    height: 56px;
+    border-radius: 31.5px;
+    background: var(--gradienti);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2;
+    cursor: pointer;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+.girlimg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-meore {
+    width: 375px;
+    height: 375px;
+    background-image: url(/images/mobilephoto.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wrap-conteiner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contentinfo {
+    width: 343px;
+    height: 120px;
+    border-radius: 10px;
+    background: var(--gradienti);
+}
+
+.contentinfo .info-text {
+    width: 286px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    color: white;
+    margin-left: 24px;
+    margin-top: 28px;
+}
+
+.conteiner {
+    width: 343px;
+    height: 259px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.pirveli-img {
+    position: absolute;
+    left: 28px;
+    top: -24px;
+}
+
+.conteiner .name-animation{
+    width: 101px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25.2px;
+    color: var(--lurjiferi);
+    margin-top: 56px;
+    margin-left: 28px;
+}
+
+.conteiner .about-container {
+    width: 286px;
+    height: 78px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--nacrisferi);
+    margin-top: 16px;
+    margin-left: 28px;
+}
+
+.conteiner .link-started {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 24px;
+    margin-left: 28px;
+    background: none;
+    border: none;
+    color: var(--vardisferi);
+}
+
+.centerflex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tablet responsive */
+
+@media only screen and (min-width: 768px) {
+    .wrap {
+        position: relative;
+    }
+    .girlimg {
+        position: absolute;
+        z-index: -1;
+        left: 360px;
+        top: 150px;
+    }
+    .responsive-meore {
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        background-image: url(/images/image-hero-tablet@2x.png);
+        overflow: hidden;
+    }
+    .responsive {
+        margin-top: 50px;
+    }
+    .pirveli-text {
+        margin-left: 39px;
+    }
+    .meore-text {
+        margin-left: 39px;
+        width: 398px;
+    }
+    .button-get-started-meore {
+        margin-left: 39px;
+    }
+    .logo-skilled {
+        margin-left: 39px;
+    }
+    .button-get-started {
+        margin-right: 39px;
+    }
+    .centerflex {
+        margin-top: 160px;
+    }
+    .wrap-conteiner {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contentinfo {
+        width: 340px;
+        height: 259px;
+    }
+    .contentinfo .info-text {
+        margin-top: 56px;
+        margin-left: 32px;
+    }
+    .conteiner {
+        width: 340px;
+    }
+}
+
+/* tablet responsive */
+
+
+@media only screen and (min-width: 968px) {
+    .girlimg {
+        position: absolute;
+        z-index: -1;
+        left: 600px;
+        top: 155px;
+    }
+    .responsive-meore {
+        width: 740px;
+        height: 740px;
+        position: absolute;
+        background-image: url(/images/image-hero-tablet@2x.png);
+        overflow: hidden;
+    }
+}
